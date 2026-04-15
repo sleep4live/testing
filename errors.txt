@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 30: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    e "Aku capek, mungkin lain kali ya."
-    ^
+File "game/script.rpy", line 28: invalid syntax
+    renpy.sound.play("audio/pirno.mp3", channel="sound").
+                                                             ^
 
 Ren'Py Version: Ren'Py 8.5.2.26010301
-Wed Apr 15 11:24:21 2026
+Wed Apr 15 20:59:29 2026

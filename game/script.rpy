@@ -1,11 +1,17 @@
-﻿# The script of the game goes in this file.
+﻿init python:
+    def typing_callback(event, interact=True, **kwargs):
+        if not interact:
+            return
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+        if event == "show":
+            renpy.sound.play("audio/typing2.mp3", channel="sound", loop=True)
 
-define e = Character("Eileen")
-define m = Character("Rafli")
-define l = Character("Lulu")
+        elif event in ("slow_done", "end"):
+            renpy.sound.stop(channel="sound")
+
+define e = Character("Eileen", callback=typing_callback)
+define m = Character("Rafli", callback=typing_callback)
+define l = Character("Lulu", callback=typing_callback)
 define r = Character("Rendi")
 
 # The game starts here.
@@ -42,3 +48,4 @@ label select_sushi:
     show eileen talking at Position(xalign=0.9, yalign=0.5) 
     e "Sushi enak tuh!!"
     return
+

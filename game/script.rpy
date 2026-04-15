@@ -40,5 +40,5 @@ label select_pizza:
 
 label select_sushi:
     show eileen talking at Position(xalign=0.9, yalign=0.5) 
-    e "Sushi enak tuh!"
+    e "Sushi enak tuh!!"
     return

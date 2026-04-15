@@ -1,34 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Could not load the game. Perhaps the script changed in an incompatible way.
+  File "game/script.rpy", line 47, in script
+    jump chapter_one_start
+renpy.script.LabelNotFound: could not find label 'chapter_one_start'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/common/00start.rpy", line 234, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 558, in script
-    python hide:
-  File "renpy/ast.py", line 1187, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1273, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/common/00keymap.rpy", line 558, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 573, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/loadsave.py", line 638, in load
-    log.unfreeze(roots, label="_after_load")
-    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/rollback.py", line 1099, in unfreeze
-    raise Exception("Could not load the game. Perhaps the script changed in an incompatible way.")
-Exception: Could not load the game. Perhaps the script changed in an incompatible way.
+  File "game/script.rpy", line 47, in script
+    jump chapter_one_start
+  File "renpy/ast.py", line 1928, in execute
+    rv = renpy.game.script.lookup(target)
+         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "renpy/script.py", line 1201, in lookup
+    raise LabelNotFound(original)
+renpy.script.LabelNotFound: could not find label 'chapter_one_start'.
 
-Windows-11-10.0.26200-SP0 AMD64
+Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.5.2.26010301
 testing 1.0
-Wed Apr 15 09:59:36 2026
+Wed Apr 15 22:19:59 2026

@@ -1,757 +1,298 @@
-2026-04-16 02:04:10 UTC
-Windows-11-10.0.26200-SP0
+2026-04-16 05:54:29 UTC
+Windows-10-10.0.19045-SP0
 Ren'Py 8.5.2.26010301
 
-Early init took 28 ms
-Loading error handling took 15 ms
-Loading script took 171 ms
-Loading save slot metadata took 14 ms
+Early init took 85 ms
+Loading error handling took 62 ms
+Loading script took 1452 ms
+Loading save slot metadata took 39 ms
 Loading persistent took 0 ms
-Running init code took 25 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 5 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 24 ms
+Running init code took 85 ms
+Loading analysis data took 10 ms
+Analyze and compile ATL took 2 ms
+Reloading save slot metadata took 22 ms
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
+Dump and make backups took 78 ms
 Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 24 ms
-DPI scale factor: 1.250000
+Making clean stores took 1 ms
+Initial gc took 104 ms
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 171 ms
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 4 ms
 Init translation took 0 ms
-Cleaning stores took 0 ms
+Cleaning stores took 1 ms
 Load screen analysis took 0 ms
-Analyze screens took 6 ms
-Save screen analysis took 7 ms
+Analyze screens took 22 ms
+Save screen analysis took 21 ms
 Save pyanalysis took 0 ms
-Save bytecode took 18 ms
-Running _start took 0 ms
-Interface start took 142 ms
+Save bytecode took 41 ms
+Running _start took 1 ms
+Interface start took 492 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Cleaning stores took 0 ms
-Load screen analysis took 11 ms
+Cleaning stores took 1 ms
+Load screen analysis took 66 ms
 Analyze screens took 0 ms
-Running _start took 0 ms
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 13 ms
-Loading script took 167 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-Running init code took 19 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 23 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 37 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 7 ms
-Save screen analysis took 7 ms
-Save pyanalysis took 3 ms
-Save bytecode took 1 ms
-Running _start took 0 ms
-Interface start took 130 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Cleaning stores took 0 ms
-Load screen analysis took 10 ms
+Running _start took 2 ms
+Cleaning stores took 1 ms
+Load screen analysis took 32 ms
 Analyze screens took 0 ms
 Running _start took 1 ms
 Resetting cache.
-Early init took 5 ms
-Loading error handling took 7 ms
-Loading script took 178 ms
-Loading save slot metadata took 9 ms
+Early init took 10 ms
+Loading error handling took 28 ms
+Loading script took 188 ms
+Loading save slot metadata took 23 ms
 Loading persistent took 0 ms
-Running init code took 19 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 25 ms
+Running init code took 49 ms
+Loading analysis data took 14 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 20 ms
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
+Dump and make backups took 101 ms
 Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 39 ms
-DPI scale factor: 1.250000
+Making clean stores took 1 ms
+Initial gc took 115 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 21 ms
+Save screen analysis took 19 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 431 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 28 ms
+Loading script took 163 ms
+Loading save slot metadata took 25 ms
+Loading persistent took 0 ms
+Running init code took 50 ms
+Loading analysis data took 15 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 19 ms
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
+Dump and make backups took 75 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 148 ms
+DPI scale factor: 1.000000
 Creating interface object took 0 ms
+Init translation took 3 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 23 ms
+Save screen analysis took 21 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 1 ms
+Interface start took 478 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Cleaning stores took 1 ms
+Load screen analysis took 38 ms
+Analyze screens took 0 ms
+Running _start took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 53 ms
+Analyze screens took 0 ms
+Running _start took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 45 ms
+Analyze screens took 0 ms
+Running _start took 1 ms
+Resetting cache.
+Early init took 39 ms
+Loading error handling took 101 ms
+Loading script took 562 ms
+Loading save slot metadata took 100 ms
+Loading persistent took 0 ms
+Running init code took 158 ms
+Loading analysis data took 43 ms
+Analyze and compile ATL took 8 ms
+Reloading save slot metadata took 57 ms
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
+Dump and make backups took 242 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 227 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
 Load screen analysis took 1 ms
-Analyze screens took 6 ms
-Save screen analysis took 9 ms
-Save pyanalysis took 0 ms
-Save bytecode took 1 ms
-Running _start took 0 ms
-Interface start took 146 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 8 ms
-Loading script took 182 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-Running init code took 20 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 30 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 41 ms
-DPI scale factor: 1.250000
-Creating interface object took 1 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 6 ms
-Save screen analysis took 8 ms
-Save pyanalysis took 0 ms
+Analyze screens took 64 ms
+Save screen analysis took 79 ms
+Save pyanalysis took 1 ms
 Save bytecode took 0 ms
-Running _start took 0 ms
-Interface start took 180 ms
+Running _start took 5 ms
+Interface start took 2368 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 5 ms
-Loading error handling took 6 ms
-Loading script took 48 ms
-Loading save slot metadata took 8 ms
+Early init took 21 ms
+Loading error handling took 50 ms
+Loading script took 314 ms
+Loading save slot metadata took 54 ms
 Loading persistent took 0 ms
-Running init code took 17 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Dump and make backups took 21 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 36 ms
-DPI scale factor: 1.250000
-Creating interface object took 1 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 10 ms
-Analyze screens took 0 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 135 ms
+
+Full traceback:
+  File "game/hayuah.rpy", line 2, in script
+    define e = Character("Eileen", who_color="#252274", callback=typing_callback)
+  File "renpy/ast.py", line 2463, in execute
+    self.set()
+    ~~~~~~~~^^
+  File "renpy/ast.py", line 2475, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1298, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/hayuah.rpy", line 2, in <module>
+    define e = Character("Eileen", who_color="#252274", callback=typing_callback)
+                                                                 ^^^^^^^^^^^^^^^ 
+NameError: name 'typing_callback' is not defined
+
+While running game code:
+  File "game/hayuah.rpy", line 2, in script
+    define e = Character("Eileen", who_color="#252274", callback=typing_callback)
+  File "game/hayuah.rpy", line 2, in <module>
+    define e = Character("Eileen", who_color="#252274", callback=typing_callback)
+                                                                 ^^^^^^^^^^^^^^^ 
+NameError: name 'typing_callback' is not defined
+DPI scale factor: 1.000000
+Interface start took 1266 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Cleaning stores took 0 ms
-Load screen analysis took 9 ms
-Analyze screens took 0 ms
-Running _start took 0 ms
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 6 ms
-Loading script took 170 ms
-Loading save slot metadata took 10 ms
-Loading persistent took 0 ms
-Running init code took 19 ms
-Loading analysis data took 3 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 7 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 25 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 39 ms
-DPI scale factor: 1.250000
-Creating interface object took 1 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 6 ms
-Save screen analysis took 7 ms
-Save pyanalysis took 0 ms
-Save bytecode took 1 ms
-Running _start took 0 ms
-Interface start took 148 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 4 ms
-Loading error handling took 7 ms
-Loading script took 186 ms
-Loading save slot metadata took 10 ms
+Early init took 14 ms
+Loading error handling took 62 ms
+Loading script took 223 ms
+Loading save slot metadata took 37 ms
 Loading persistent took 0 ms
-Running init code took 20 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 25 ms
+Running init code took 55 ms
+Loading analysis data took 15 ms
+Analyze and compile ATL took 2 ms
+Reloading save slot metadata took 19 ms
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
+Dump and make backups took 92 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 39 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 8 ms
-Save screen analysis took 9 ms
-Save pyanalysis took 3 ms
-Save bytecode took 2 ms
-Running _start took 1 ms
-Interface start took 151 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Cleaning stores took 0 ms
-Load screen analysis took 11 ms
-Analyze screens took 0 ms
-Running _start took 0 ms
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 7 ms
-Loading script took 69 ms
-Loading save slot metadata took 8 ms
-Loading persistent took 0 ms
-
-File "game/screens.rpy", line 358: 'volume' is not a keyword argument or valid child of the on statement.
-    on "show" action Play("music", "audio/main-menu-theme.ogg", fadein=1.0) volume 0
-                                                                                  ^
-DPI scale factor: 1.250000
-Interface start took 64 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 6 ms
-Loading script took 76 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-
-File "game/screens.rpy", line 358: 'volume' is not a keyword argument or valid child of the on statement.
-    on "show" action Play("music", "audio/main-menu-theme.ogg", fadein=1.0) volume
-                                                                                  ^
-DPI scale factor: 1.250000
-Interface start took 63 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 6 ms
-Loading script took 66 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-
-File "game/screens.rpy", line 358: 'volume' is not a keyword argument or valid child of the on statement.
-    on "show" action Play("music", "audio/main-menu-theme.ogg", fadein=1.0) volume 0.5
-                                                                                  ^
-DPI scale factor: 1.250000
-Interface start took 62 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 6 ms
-Loading script took 48 ms
-Loading save slot metadata took 8 ms
-Loading persistent took 0 ms
-Running init code took 37 ms
-Loading analysis data took 5 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Dump and make backups took 22 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 34 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 11 ms
-Analyze screens took 1 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 1 ms
-Running _start took 1 ms
-Interface start took 144 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 7 ms
-Loading script took 161 ms
-Loading save slot metadata took 8 ms
-Loading persistent took 0 ms
-Running init code took 19 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 26 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 40 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 1 ms
-Analyze screens took 5 ms
-Save screen analysis took 9 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 155 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 7 ms
-Loading script took 174 ms
-Loading save slot metadata took 10 ms
-Loading persistent took 0 ms
-Running init code took 22 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 28 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 46 ms
-DPI scale factor: 1.250000
-Creating interface object took 1 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 6 ms
-Save screen analysis took 7 ms
-Save pyanalysis took 0 ms
-Save bytecode took 1 ms
-Running _start took 0 ms
-Interface start took 162 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 7 ms
-Loading script took 161 ms
-Loading save slot metadata took 8 ms
-Loading persistent took 0 ms
-Running init code took 16 ms
-Loading analysis data took 3 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 5 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 23 ms
-Cleaning cache took 0 ms
-Making clean stores took 1 ms
-Initial gc took 43 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 1 ms
-Analyze screens took 6 ms
-Save screen analysis took 8 ms
-Save pyanalysis took 0 ms
-Save bytecode took 1 ms
-Running _start took 0 ms
-Interface start took 167 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 6 ms
-Loading script took 47 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-Running init code took 18 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 5 ms
-Dump and make backups took 23 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 44 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 10 ms
-Analyze screens took 0 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 143 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4 ms
-Loading error handling took 6 ms
-Loading script took 49 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-Running init code took 18 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Dump and make backups took 23 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 46 ms
-DPI scale factor: 1.250000
-Creating interface object took 1 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 12 ms
-Analyze screens took 1 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 0 ms
-Interface start took 157 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 7 ms
-Loading script took 168 ms
-Loading save slot metadata took 10 ms
-Loading persistent took 0 ms
-Running init code took 23 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 27 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 43 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 1 ms
-Analyze screens took 5 ms
-Save screen analysis took 9 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 160 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6 ms
-Loading error handling took 8 ms
-Loading script took 177 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-Running init code took 21 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 7 ms
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 26 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 56 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 7 ms
-Save screen analysis took 11 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 177 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5 ms
-Loading error handling took 6 ms
-Loading script took 48 ms
-Loading save slot metadata took 8 ms
-Loading persistent took 0 ms
-Running init code took 18 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 6 ms
-Dump and make backups took 23 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 48 ms
-DPI scale factor: 1.250000
+Initial gc took 141 ms
+DPI scale factor: 1.000000
 Creating interface object took 0 ms
 Init translation took 1 ms
 Cleaning stores took 0 ms
-Load screen analysis took 11 ms
-Analyze screens took 1 ms
-Save screen analysis took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 46 ms
+Save screen analysis took 36 ms
 Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 0 ms
-Interface start took 153 ms
+Save bytecode took 2 ms
+Running _start took 3 ms
+Interface start took 457 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 4 ms
-Loading error handling took 6 ms
-Loading script took 48 ms
-Loading save slot metadata took 9 ms
-Loading persistent took 0 ms
-Running init code took 17 ms
-Loading analysis data took 2 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
-Dump and make backups took 23 ms
+Early init took 20 ms
+Loading error handling took 29 ms
+Loading script took 216 ms
+Loading save slot metadata took 35 ms
+Loading persistent took 1 ms
+Running init code took 84 ms
+Loading analysis data took 8 ms
+Analyze and compile ATL took 3 ms
+Reloading save slot metadata took 29 ms
+Dump and make backups took 122 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 47 ms
-DPI scale factor: 1.250000
-Creating interface object took 0 ms
+Initial gc took 170 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
 Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 10 ms
-Analyze screens took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 80 ms
+Analyze screens took 3 ms
 Save screen analysis took 0 ms
 Save pyanalysis took 0 ms
 Save bytecode took 0 ms
-Running _start took 0 ms
-Interface start took 149 ms
+Running _start took 3 ms
+Interface start took 703 ms
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce RTX 3050 Laptop GPU/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 566.07'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Cleaning stores took 0 ms
-Load screen analysis took 7 ms
+Load screen analysis took 29 ms
+Analyze screens took 1 ms
+Running _start took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 28 ms
 Analyze screens took 0 ms
-Running _start took 2 ms
+Running _start took 1 ms

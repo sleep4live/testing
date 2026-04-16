@@ -9,14 +9,10 @@
         elif event in ("slow_done", "end"):
             renpy.sound.stop(channel="sound")
 
-define e = Character("Eileen", who_color="#252274")
-define i = Character("Rafli", who_color="#fba92b")
-define l = Character("Lulu", who_color="#2aa7b6")
-define r = Character("Rendi", who_color="#73110c")
-define e = Character("Eileen", callback=typing_callback)
-define m = Character("Rafli", callback=typing_callback)
-define l = Character("Lulu", callback=typing_callback)
-define r = Character("Rendi", callback=typing_callback)
+define e = Character("Eileen", who_color="#252274", callback=typing_callback)
+define i = Character("Rafli", who_color="#fba92b", callback=typing_callback)
+define l = Character("Lulu", who_color="#2aa7b6",  callback=typing_callback)
+define r = Character("Rendi", who_color="#73110c",  callback=typing_callback)
 
 # The game starts here.
 scene bg room
@@ -59,17 +55,17 @@ label start:
     r "my name is Rendi"
     l "my name is lulu"
     e "my name is eileen"
-    return
+    jump chapter_one_start
 
 
 label select_pizza:
     show eileen talking at Position(xalign=0.9, yalign=0.5)
     e "Kita makan pizza ya!"
-    return
+    jump chapter_one_start
 
 
 label select_sushi:
     show eileen talking at Position(xalign=0.9, yalign=0.5) 
     e "Sushi enak tuh!!"
-    return
+    jump chapter_one_start
 

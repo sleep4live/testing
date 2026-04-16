@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: invalid syntax
-    renpy.sound.play("audio/pirno.mp3", channel="sound").
-                                                             ^
+File "game/screens.rpy", line 358: 'volume' is not a keyword argument or valid child of the on statement.
+    on "show" action Play("music", "audio/main-menu-theme.ogg", fadein=1.0) volume 0.5
+                                                                                  ^
 
 Ren'Py Version: Ren'Py 8.5.2.26010301
-Wed Apr 15 20:59:29 2026
+Thu Apr 16 09:07:06 2026

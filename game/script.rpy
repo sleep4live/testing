@@ -52,7 +52,6 @@ label start:
     play sound "audio/laugh.mp3" volume 0.2
     show eileen talking at Position(xalign=0.9, yalign=0.5) 
     e "Aku capek, mungkin lain kali ya."
-    i "my name is Rafli"
     r "my name is Rendi"
     l "my name is lulu"
     e "my name is eileen"
@@ -69,4 +68,3 @@ label select_sushi:
     show eileen talking at Position(xalign=0.9, yalign=0.5) 
     e "Sushi enak tuh!!"
     jump chapter_one_start
-

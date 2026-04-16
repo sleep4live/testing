@@ -1,16 +1,17 @@
-define fade_black = Fade(0.5, 5, 0.5)
+define fade_black = Fade(0.5, 1, 0.5)
 label chapter_one_start:
  
     play music jangkrek loop
     play sound step
     scene va with fade_black
+    pause
 
     show rafli at Position(xalign=0.1, yalign=0.5)
     show rendi talk at Position(xalign=0.4, yalign=0.5)
     show lulu scared at Position(xalign=0.7, yalign=0.5)
     show eileen happy at Position(xalign=0.9, yalign=0.5)
-
     with dissolve
+
     i renungkan"(Aku tidak tahu kenapa aku setuju untuk ikut malam ini. Udara di sini terasa... berat.)"
     show rafli
 
@@ -24,6 +25,6 @@ label chapter_one_start:
     l scared"Tuh kan. Mata kamu aja yang capek, El. Lagian, mana ada hantu? Paling gelandangan atau hewan liar."
     r angry"Udahlah, ayo masuk! Pintunya nggak dikunci kok, gue udah cek tadi sore."
 
-    play sound pintu
     scene villa with fade_black
+    play sound pintu
     return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/hayuah.rpy", line 24: end of line expected.
-    l scared"Lulu: "Tuh kan. Mata kamu aja yang capek, El. Lagian, mana ada hantu? Paling gelandangan atau hewan liar.""
-                    ^
+File "game/hayuah.rpy", line 6: Line is indented, but the preceding play sound statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    hide rafli
+    ^
 
 Ren'Py Version: Ren'Py 8.5.2.26010301
-Thu Apr 16 22:32:49 2026
+Thu Apr 16 23:58:04 2026

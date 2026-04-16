@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 51: unmatched ']'
-    define config.has_voice = True]
-                                  ^
+File "game/gui.rpy", line 99: expected statement.
+    F
+     ^
 
 Ren'Py Version: Ren'Py 8.5.2.26010301
-Thu Apr 16 19:23:34 2026
+Thu Apr 16 20:59:30 2026

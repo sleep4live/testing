@@ -9,11 +9,11 @@
         elif event in ("slow_done", "end"):
             renpy.sound.stop(channel="sound")
 
-define e = Character("Eileen", who_color="#252274", callback=typing_callback)
-define i = Character("Rafli", who_color="#fba92b", callback=typing_callback)
-define l = Character("Lulu", who_color="#2aa7b6",  callback=typing_callback)
-define r = Character("Rendi", who_color="#73110c",  callback=typing_callback)
-define n = Character("narrator", who_color="#9cbfd3", callback=typing_callback)
+define e = Character("Eileen", image="eileen", who_color="#252274", callback=typing_callback)
+define i = Character("Rafli", image="rafli", who_color="#fba92b", callback=typing_callback)
+define l = Character("Lulu", image="lulu", who_color="#2aa7b6",  callback=typing_callback)
+define r = Character("Rendi", image="rendi", who_color="#73110c",  callback=typing_callback)
+define n = Character("narrator",who_color="#9cbfd3", callback=typing_callback)
 
 # The game starts here.
 scene bg room

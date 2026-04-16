@@ -1,4 +1,4 @@
-init python:
+﻿init python:
     def typing_callback(event, interact=True, **kwargs):
         if not interact:
             return
@@ -20,6 +20,21 @@ define r = Character("Rendi", callback=typing_callback)
 
 # The game starts here.
 scene bg room
+image splash = "splash.png"
+
+label splashscreen:
+    scene black 
+    pause 1
+    
+    scene splash:
+        size (1920, 1080)  
+    with dissolve
+    pause 3
+
+    scene black with dissolve
+    pause 1
+        
+    return
 
 label start:
     show rendi talk at Position(xalign=0.4, yalign=0.5)

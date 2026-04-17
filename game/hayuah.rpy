@@ -27,4 +27,7 @@ label chapter_one_start:
 
     scene villa with fade_black
     play sound pintu
+    "Secara Perlahan, mereka mendorong pintu villa yang rapuh dan sudah diselimuti oleh debu"
+    "Di dalam, mereka disambut dengan Ruang tamu yang berdebu dam perabotan yang di tutupi dengan kain putih"
+    
     return

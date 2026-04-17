@@ -6,10 +6,10 @@ label chapter_one_start:
     scene villa2 with fade_black
     pause
 
-    show rafli at Position(xalign=0.1, yalign=0.6)
-    show rendi at Position(xalign=0.3, yalign=0.6)
-    show lulu at Position(xalign=0.7, yalign=0.6)
-    show eileen at Position(xalign=0.9, yalign=0.6)
+    show rafli at Position(xalign=0.1, yalign=0.6, zoom=0.1)
+    show rendi at Position(xalign=0.3, yalign=0.6, zoom=0.1)
+    show lulu at Position(xalign=0.7, yalign=0.6, zoom=0.1)
+    show eileen at Position(xalign=0.9, yalign=0.6, zoom=0.1)
     with dissolve
 
     i renungkan"(Aku tidak tahu kenapa aku setuju untuk ikut malam ini. Udara di sini terasa... berat.)"

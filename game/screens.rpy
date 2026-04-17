@@ -295,23 +295,23 @@ screen navigation():
         action Start()
     
     textbutton _("Load"):
-        xalign 0.8 yalign 0.4  # Agak ke kanan
+        xalign 0.2 yalign 0.4  # Agak ke kanan
         action ShowMenu("load")
     
     textbutton _("Preferences"):
-        xalign 0.2 yalign 0.6
+        xalign 0.1 yalign 0.5
         action ShowMenu("preferences")
     
     textbutton _("About"):
-        xalign 0.7 yalign 0.7
+        xalign 0.1 yalign 0.6
         action ShowMenu("about")
     
     textbutton _("Help"):
-        xalign 0.3 yalign 0.85
+        xalign 0.1 yalign 0.7
         action Help()
     
     textbutton _("Quit"):
-        xalign 0.5 yalign 0.99
+        xalign 0.1 yalign 0.8
         action Quit(confirm=not main_menu)
 
 
@@ -321,6 +321,7 @@ style navigation_button_text is gui_button_text
 style navigation_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
+    
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")

@@ -69,7 +69,7 @@ label chapter_one_start:
     play sound handle
     pause 3
     r talk "Nggak bisa, Raf! Macet total! Padahal tadi gagangnya lancar-lancar aja!"
-    play sound breathe
-    pause 3
+    pause 1
+    play audio breathe1
     l scared "Oke, tenang. Jangan panik. Anginnya kencang, mungkin pintunya nyangkut karena kerangkanya sudah lapuk. Kita cari jalan keluar lain. Pasti ada pintu belakang"
     return

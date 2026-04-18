@@ -288,32 +288,22 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
-    # Button jadi independent, bisa taruh dimana aja
     
-    textbutton _("Start"):
-        xalign 0.1 yalign 0.3  # Pojok kiri atas
-        action Start()
-    
-    textbutton _("Load"):
-        xalign 0.2 yalign 0.4  # Agak ke kanan
-        action ShowMenu("load")
-    
-    textbutton _("Preferences"):
-        xalign 0.1 yalign 0.5
-        action ShowMenu("preferences")
-    
-    textbutton _("About"):
-        xalign 0.1 yalign 0.6
-        action ShowMenu("about")
-    
-    textbutton _("Help"):
-        xalign 0.1 yalign 0.7
-        action Help()
-    
-    textbutton _("Quit"):
-        xalign 0.1 yalign 0.8
-        action Quit(confirm=not main_menu)
-
+    # Cek apakah ada screen lain yang aktif
+    # Kalau ada, sembunyiin navigation
+    if not renpy.get_screen("load") and not renpy.get_screen("save") and not renpy.get_screen("preferences") and not renpy.get_screen("about") and not renpy.get_screen("help"):
+        
+        vbox:
+            xalign 0.5  
+            yalign 0.5  
+            spacing 25  
+            
+            textbutton _("Start") action Start()
+            textbutton _("Load") action ShowMenu("load")
+            textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("About") action ShowMenu("about")
+            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Quit") action Quit(confirm=not main_menu)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text

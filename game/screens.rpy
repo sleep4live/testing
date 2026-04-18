@@ -290,20 +290,27 @@ style quick_button_text:
 screen navigation():
     
     # Cek apakah ada screen lain yang aktif
-    # Kalau ada, sembunyiin navigation
     if not renpy.get_screen("load") and not renpy.get_screen("save") and not renpy.get_screen("preferences") and not renpy.get_screen("about") and not renpy.get_screen("help"):
         
         vbox:
             xalign 0.5  
-            yalign 0.5  
-            spacing 25  
+            yalign 0.5  # Ganti jadi 0.5, bukan 5.5!
+            spacing 25
             
-            textbutton _("Start") action Start()
-            textbutton _("Load") action ShowMenu("load")
-            textbutton _("Preferences") action ShowMenu("preferences")
-            textbutton _("About") action ShowMenu("about")
-            textbutton _("Help") action ShowMenu("help")
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            # Loop FOR nya MASUK KE DALAM vbox (perhatiin indentasi!)
+            for label, action_item in [
+                (_("Start"), Start()),
+                (_("Load"), ShowMenu("load")),
+                (_("Preferences"), ShowMenu("preferences")),
+                (_("About"), ShowMenu("about")),
+                (_("Help"), ShowMenu("help")),
+                (_("Quit"), Quit(confirm=not main_menu))
+            ]:
+                textbutton label:
+                    action action_item
+                    text_align 0.5
+                    xalign 0.5  # Center tombolnya juga
+                    xminimum 300  # Semua tombol lebar minimal 300px (sesuaikan)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text

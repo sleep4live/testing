@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene1.rpy", line 70: unterminated string literal
-    r talk "Sial... terkunci! Rendi, bantuin gue dorong!""
+File "game/scene1.rpy", line 79: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    play audio runaway
+    ^
 
 Ren'Py Version: Ren'Py 8.5.2.26010301
-Sat Apr 18 08:29:31 2026
+Sat Apr 18 12:47:58 2026

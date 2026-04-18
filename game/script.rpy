@@ -17,7 +17,7 @@ define n = Character("narrator",who_color="#9cbfd3", callback=typing_callback)
 
 # The game starts here.
 scene bg room
-image splash = "splash.png"
+#image splash = "splash.png"
 
 label splashscreen:
     scene black 

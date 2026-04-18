@@ -38,7 +38,7 @@ label chapter_one_start:
     l scared"Tuh kan. Mata kamu aja yang capek, El. Lagian, mana ada hantu? Paling gelandangan atau hewan liar."
     r angry"Udahlah, ayo masuk! Pintunya nggak dikunci kok, gue udah cek tadi sore."
 
-    #scene 1 end - scene 2 plays
+    #scene 1 end - scene 2 plays#
     play sound pintu fadein 2.0
     scene expression Solid("#000000")
     stop music fadeout 2.0

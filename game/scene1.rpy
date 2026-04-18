@@ -31,14 +31,14 @@ label chapter_one_start:
     e talking"Rafli... aku rasa kita nggak seharusnya di sini. Ada yang... ngeliatin kita dari jendela atas."
     play sound patah
     "*KREK*"
-    show lulu scared
+    show lulu shock
     show rendi scaret
     show eileen shock
     i scared"Jendela atas? (Melihat ke atas, tapi tidak ada apa-apa) Nggak ada siapa-siapa, El. Mungkin cuma pantulan cahaya bulan."
-    show eileen talking
     l scared"Tuh kan. Mata kamu aja yang capek, El. Lagian, mana ada hantu? Paling gelandangan atau hewan liar."
     r angry"Udahlah, ayo masuk! Pintunya nggak dikunci kok, gue udah cek tadi sore."
 
+    #scene 1 end - scene 2 plays
     play sound pintu fadein 2.0
     scene expression Solid("#000000")
     stop music fadeout 2.0
@@ -57,19 +57,38 @@ label chapter_one_start:
     with flash
     show rafli scared at shake
     show rendi scaret at shake
-    show lulu scared at shake
+    show lulu shock at shake
     show eileen shock at shake
     "*DOR*"
     play audio kia
     e shock "KYAAA!"
-    l scared "Apa-apaan itu?!"
+    l shock "Apa-apaan itu?!"
     play sound handle
     pause 3
     i scared "Sial... terkunci! Rendi, bantuin gue dorong!"
     play sound handle
     pause 3
     r talk "Nggak bisa, Raf! Macet total! Padahal tadi gagangnya lancar-lancar aja!"
-    play sound breathe
-    pause 3
+    play audio breathe2
     l scared "Oke, tenang. Jangan panik. Anginnya kencang, mungkin pintunya nyangkut karena kerangkanya sudah lapuk. Kita cari jalan keluar lain. Pasti ada pintu belakang"
+    play audio cry
+    e cry "Bukan angin... Ada yang ketawa. Kalian nggak denger? Ada yang ketawa di telingaku..."
+    i happy "El, tenang. Kita bertiga ada di sini."
+    r talk "Eh, guys... Kalian lihat lukisan di ujung lorong itu nggak sih? Dari tadi gue perhatiin, kayaknya matanya... gerak."
+    show rafli scared
+    l angry "Rendi, ini bukan waktunya bercanda!"
+    r angry "Gue serius, Lu! Sini deh lihat!"
+    play audio runaway
+    hide rendi with dissolve
+    i mad1 "Ren, jangan misah!"
+    stop music fadeout 5.0
+    "..."
+    "..."
+    play audio drop
+    show rafli scared at shake
+    show lulu shock at shake
+    show eileen shock at shake
+    "!!!"
+    "..."
+    r "Raf... Lu... El... Sini cepetan. Gue nemu sesuatu."
     return

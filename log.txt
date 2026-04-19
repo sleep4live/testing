@@ -1,20 +1,33 @@
-2026-04-19 05:48:34 UTC
+2026-04-19 07:00:37 UTC
 Windows-10-10.0.19045-SP0
 Ren'Py 8.5.2.26010301
 
-Early init took 86 ms
-Loading error handling took 34 ms
-Loading script took 245 ms
+Early init took 106 ms
+Loading error handling took 39 ms
+Loading script took 197 ms
 Loading save slot metadata took 46 ms
 Loading persistent took 0 ms
-
-File "game/scene1.rpy", line 119: end of line expected.
-    scene jskidding with vpunch 0.4 1.2
-                                ^
+Running init code took 80 ms
+Loading analysis data took 6 ms
+Analyze and compile ATL took 2 ms
+Reloading save slot metadata took 22 ms
+Dump and make backups took 76 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 112 ms
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 210 ms
+Creating interface object took 4 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 57 ms
+Analyze screens took 8 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 8 ms
+Interface start took 475 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -26,3 +39,91 @@ Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
 Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
 Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/scene1.rpy", line 116, in script
+    i talk "Kita samperin Rendi dulu. Jangan sampai dia ngelakuin hal bodoh sendirian"
+  File "renpy/ast.py", line 2925, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 991, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/sayexports.py", line 129, in say
+    who(what, *args, **kwargs)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 1503, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 1321, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^ 
+  File "renpy/character.py", line 1281, in resolve_say_attributes
+    renpy.exports.show(show_image)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "renpy/exports/displayexports.py", line 486, in show
+    if not base.find_target() and renpy.config.missing_show:
+           ~~~~~~~~~~~~~~~~^^                               
+  File "renpy/display/image.py", line 444, in find_target
+    self.target = target._duplicate(a)
+                  ~~~~~~~~~~~~~~~~~^^^
+  File "renpy/display/displayable.py", line 278, in _duplicate
+    args.extraneous()
+    ~~~~~~~~~~~~~~~^^
+  File "renpy/display/displayable.py", line 118, in extraneous
+    raise Exception(
+    ...<4 lines>...
+    )
+Exception: Image 'rafli' does not accept attributes 'talk'.
+
+While running game code:
+  File "game/scene1.rpy", line 116, in script
+    i talk "Kita samperin Rendi dulu. Jangan sampai dia ngelakuin hal bodoh sendirian"
+Exception: Image 'rafli' does not accept attributes 'talk'.
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 28 ms
+Loading script took 233 ms
+Loading save slot metadata took 30 ms
+Loading persistent took 1 ms
+Running init code took 52 ms
+Loading analysis data took 23 ms
+Analyze and compile ATL took 3 ms
+Reloading save slot metadata took 27 ms
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
+Dump and make backups took 167 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 118 ms
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 30 ms
+Save screen analysis took 26 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 499 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 7500M/7600M Series'
+Version: '4.5.13399 Compatibility Profile Context 15.200.1062.1004'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+Cleaning stores took 0 ms
+Load screen analysis took 111 ms
+Analyze screens took 0 ms
+Running _start took 5 ms
+Cleaning stores took 0 ms
+Load screen analysis took 40 ms
+Analyze screens took 0 ms
+Running _start took 3 ms

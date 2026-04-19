@@ -113,7 +113,7 @@ label chapter_one_start:
 
     label select_rendi:
         $rendilove += 1
-        i talk "Kita samperin Rendi dulu. Jangan sampai dia ngelakuin hal bodoh sendirian"
+        i talking "Kita samperin Rendi dulu. Jangan sampai dia ngelakuin hal bodoh sendirian"
         play audio jp
         scene jskidding with vpunch
         pause 0.5
@@ -123,12 +123,12 @@ label chapter_one_start:
 
     label select_atas:
         $eileenlove -= 1
-        i talk "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"
+        i talking "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"
         scene expression Solid("#000000")
         return#
 
     label select_diam:
-        i talk "Kita diam di sini. Cari alat untuk dobrak pintu ini sekarang juga"
+        i talking "Kita diam di sini. Cari alat untuk dobrak pintu ini sekarang juga"
         return#
 
     return

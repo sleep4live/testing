@@ -91,4 +91,44 @@ label chapter_one_start:
     "!!!"
     "..."
     r "Raf... Lu... El... Sini cepetan. Gue nemu sesuatu."
+
+    scene lorong2 with fade_black
+    pause 1
+    show rafli at Position(xalign=0.0, yalign=0.6, zoom=0.1)
+    show lulu at Position(xalign=0.8, yalign=0.6, zoom=0.1)
+    show eileen at Position(xalign=1.0, yalign=0.6, zoom=0.1)
+    "..."
+    "di akhir lorong yang gelap, Rendi yang hampir tidak terlihat sedang berdiri,"
+    "tetapi disebelah kanan mu terdapat sebuah anak tangga menuju lantai atas, dimana suara ledakann sebelumnya berasal, "
+    "disaat yang bersamaan Eileen terlihat sangat pucat seolah ingin pingsan."
+    "apa yang harus Rafli lakukan...?"
+
+    menu:
+        "Hampiri Rendi":
+            jump select_rendi
+        "Investigasi lantai atas":
+            jump select_atas
+        "Diam Disini & cari alat untuk dobrak pintu":
+            jump select_diam
+
+    label select_rendi:
+        $rendilove += 1
+        i talk "Kita samperin Rendi dulu. Jangan sampai dia ngelakuin hal bodoh sendirian"
+        play audio jp
+        scene jskidding with vpunch
+        pause 0.5
+        "..."
+        scene lorong2 with fade_black
+        return
+
+    label select_atas:
+        $eileenlove -= 1
+        i talk "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"
+        scene expression Solid("#000000")
+        return#
+
+    label select_diam:
+        i talk "Kita diam di sini. Cari alat untuk dobrak pintu ini sekarang juga"
+        return#
+
     return

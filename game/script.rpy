@@ -15,6 +15,10 @@ define l = Character("Lulu", image="lulu", who_color="#2aa7b6",  callback=typing
 define r = Character("Rendi", image="rendi", who_color="#73110c",  callback=typing_callback)
 define n = Character("narrator",who_color="#9cbfd3", callback=typing_callback)
 
+default eileenlove = 0
+default lululove = 0
+default rendilove = 0
+
 # The game starts here.
 scene bg room
 #image splash = "splash.png"

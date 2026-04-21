@@ -126,16 +126,21 @@ label chapter_one_start:
         i scared "uuraaa"
         show lulu shock at Position(xalign=0.8, yalign=0.6, zoom=0.1)
         l shock "AAAA"
-        "Lorong sempit dengan wallpaper mengelupas, lukisan-lukisan tua"
-        "..."
-        show kolonial
-        r scaret "Liat deh... Ini keluarga yang dibantai itu. Tapi... yang aneh... ada satu orang di sini yang wajahnya dicoret."
-        l talk "Mungkin itu pelakunya. Atau korban yang dihapus dari sejarah keluarga."
+        "Mereka berjalan melalui lorong sempit dengan wallpaper mengelupas, lukisan-lukisan tua"
+        "Sesampai nya di ujung lorong, tampak Rendi yang berhadapan dengan potret keluarga bergaya kolonial"
+        play music woodsteps fadein 2.0
+        show kolonial with fade_black
+        stop music
+        window hide
+        pause
+        window show dissolve
+        r "Liat deh... Ini keluarga yang dibantai itu. Tapi... yang aneh... ada satu orang di sini yang wajahnya dicoret."
+        l "Mungkin itu pelakunya. Atau korban yang dihapus dari sejarah keluarga."
         "SFX: Tiba-tiba lampu senter Rendi padam"
-        r scaret "Eh, baterainya abis? padahal baru ganti-"
+        r "Eh, baterainya abis? padahal baru ganti-"
         "Suara bisikan cepat dari belakang lukisan: Kembali... kembali... 
         kembali..."
-        e talk1 "Eliyn: (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
+        e "Eliyn: (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
         i "Rafli: Ada ruang rahasia..."
         return
         

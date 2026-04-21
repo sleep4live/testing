@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene1.rpy", line 119: end of line expected.
-    scene jskidding with vpunch 0.4 1.2
-                                ^
+File "game/gui.rpy", line 69: invalid decimal literal
+    33a
+     ^
 
 Ren'Py Version: Ren'Py 8.5.2.26010301
-Sun Apr 19 12:48:35 2026
+Tue Apr 21 17:26:10 2026

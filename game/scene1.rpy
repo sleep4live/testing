@@ -118,10 +118,28 @@ label chapter_one_start:
         play audio jp
         scene jskidding with vpunch
         pause 0.5
-        "..."
-        scene lorong2 with fade_black
-        return
 
+        scene lorong2 with fade_black
+        show eileen cry  at Position(xalign=1.0, yalign=0.6, zoom=0.1)
+        e cry "apatu woi"
+        show rafli scared at Position(xalign=0.0, yalign=0.6, zoom=0.1)
+        i scared "uuraaa"
+        show lulu shock at Position(xalign=0.8, yalign=0.6, zoom=0.1)
+        l shock "AAAA"
+        "Lorong sempit dengan wallpaper mengelupas, lukisan-lukisan tua"
+        "..."
+        show kolonial
+        r scaret "Liat deh... Ini keluarga yang dibantai itu. Tapi... yang aneh... ada satu orang di sini yang wajahnya dicoret."
+        l talk "Mungkin itu pelakunya. Atau korban yang dihapus dari sejarah keluarga."
+        "SFX: Tiba-tiba lampu senter Rendi padam"
+        r scaret "Eh, baterainya abis? padahal baru ganti-"
+        "Suara bisikan cepat dari belakang lukisan: Kembali... kembali... 
+        kembali..."
+        e talk1 "Eliyn: (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
+        i "Rafli: Ada ruang rahasia..."
+        return
+        
+        
     label select_atas:
         $eileenlove -= 1
         i talking "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"
@@ -133,3 +151,5 @@ label chapter_one_start:
         return#
 
     return
+
+

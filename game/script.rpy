@@ -13,7 +13,6 @@ define e = Character("Eileen", image="eileen", who_color="#252274", callback=typ
 define i = Character("Rafli", image="rafli", who_color="#fba92b", callback=typing_callback)
 define l = Character("Lulu", image="lulu", who_color="#2aa7b6",  callback=typing_callback)
 define r = Character("Rendi", image="rendi", who_color="#73110c",  callback=typing_callback)
-define n = Character("narrator",who_color="#9cbfd3", callback=typing_callback)
 
 default eileenlove = 0
 default lululove = 0
@@ -38,27 +37,26 @@ label splashscreen:
     return
 
 label start:
-    show rendi talk at Position(xalign=0.4, yalign=0.5)
-    show lulu scared at Position(xalign=0.7, yalign=0.5)
+    show rendi  at Position(xalign=0.4, yalign=0.5)
+    show lulu diam at Position(xalign=0.7, yalign=0.5)
     show rafli talking at Position(xalign=0.1, yalign=0.5)
     show eileen happy at Position(xalign=0.9, yalign=0.5)    
-    i "Kamu mau makan apa?"
-
-    menu:
-        "Pizza":
-            jump select_pizza
-        "Sushi":
-            jump select_sushi
-        "Nggak usah, makasih":
-            show eileen talking at Position(xalign=0.9, yalign=0.5)
-            e "Oke deh..."
+    i "Perkenalan dulu deh ya"
 
     play sound "audio/laugh.mp3" volume 0.2
-    show eileen talking at Position(xalign=0.9, yalign=0.5) 
-    e "Aku capek, mungkin lain kali ya."
-    r "my name is Rendi"
-    l "my name is lulu"
-    e "my name is eileen"
+    show rafli talking at Position(xalign=0.1, yalign=0.5)
+    i "nama saya rafli"
+    show eileen talking at Position(xalign=0.9, yalign=0.5)
+    show rafli  at Position(xalign=0.1, yalign=0.5)
+    e "nama saya eileen"
+    show rendi  at Position(xalign=0.4, yalign=0.5)
+    show eileen happy at Position(xalign=0.9, yalign=0.5)
+    show rafli at Position(xalign=0.1, yalign=0.5)
+    show rendi talk3 at Position(xalign=0.4, yalign=0.5)
+    r "nama saya Rendi" 
+    show rendi at Position(xalign=0.4, yalign=0.5)
+    show lulu talk at Position(xalign=0.7, yalign=0.5)
+    l "nama saya lulu"
     jump chapter_one_start
 
 

@@ -26,7 +26,7 @@ label chapter_one_start:
     show rafli
 
     r talk"Kalian lihat bangunan di belakangku ini? Ini dia, guys. Vila 44. Tempat yang katanya jadi lokasi pembantaian satu keluarga di tahun 90-an!"
-    l angry"Rendi, tolong hentikan intro bodohmu itu. Dingin banget di sini, dan baterai ponselku tiba-tiba drop jadi 15%%. Kalau kita cuma mau buktikan mitos konyolmu, mending kita pulang."
+    l angryy"Rendi, tolong hentikan intro bodohmu itu. Dingin banget di sini, dan baterai ponselku tiba-tiba drop jadi 15%%. Kalau kita cuma mau buktikan mitos konyolmu, mending kita pulang."
     r angry"Ah elah, Lu. Lu kan anak sains, masa takut sama mitos? Kita cuma masuk, rekam 30 menit, terus balik. Deal?"
     e talking"Rafli... aku rasa kita nggak seharusnya di sini. Ada yang... ngeliatin kita dari jendela atas."
     play sound patah
@@ -65,6 +65,7 @@ label chapter_one_start:
     l shock "Apa-apaan itu?!"
     play sound handle
     pause 3
+    show lulu rafli
     i scared "Sial... terkunci! Rendi, bantuin gue dorong!"
     play sound handle
     pause 3
@@ -76,7 +77,7 @@ label chapter_one_start:
     i happy "El, tenang. Kita bertiga ada di sini."
     r talk "Eh, guys... Kalian lihat lukisan di ujung lorong itu nggak sih? Dari tadi gue perhatiin, kayaknya matanya... gerak."
     show rafli scared
-    l angry "Rendi, ini bukan waktunya bercanda!"
+    l angryy "Rendi, ini bukan waktunya bercanda!"
     r angry "Gue serius, Lu! Sini deh lihat!"
     play audio runaway
     hide rendi with dissolve

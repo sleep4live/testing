@@ -10,6 +10,30 @@ define flash = Fade(0.1, 0, 0.5, color="#ffffff")
 
 scene black_screen
 label chapter_one_start:
+    scene basement
+    show rafli at Position(xalign=0.0, yalign=0.6, zoom=0.1)
+    show rendi at Position(xalign=0.2, yalign=0.6, zoom=0.1)
+    show lulu at Position(xalign=0.8, yalign=0.6, zoom=0.1)
+    show eileen at Position(xalign=1.0, yalign=0.6, zoom=0.1)
+    with dissolve
+
+    play music crowd loop
+
+    l rafli "Ada apa Ren ngajakain ke kantin?"
+    i talking "Tau nih, Tumben banget ngajakin" 
+    r talk3 "Yaaaa gpp sih, gw cuma pengen ketemu kalian"
+    r talk3 "Ehh lu pada tau ga villa 44?"
+    l rafli "OHHHHH villa yang jadi tempat pembunuhan itu ya?"
+    l rafli "Kenapa emangnya? lu mau ngajakin kita kesana?"
+    r talk3 "Gw punya ide konten mengeksplor villa 44 ini.."
+    e talk2 "Villa yang angker itu kann? ada penunggunya.."
+    i talk1 "emang lu brani Ren?"
+    r talk "udah ngajakin masa takut?"
+    l rafli "tengil banget lo, bukan darerah kita lohh itu..."
+    r talk3 "aman... pake mobil gw aja"
+    e talk2 "lu seriusan Ren? Tempat itu kan Terlarang.."
+    l talk "okeee, gw ikut. tapi tunggu gw balik kerja ya..."
+
  
     play music jangkrek loop
     play sound step
@@ -128,6 +152,7 @@ label chapter_one_start:
         l shock "AAAA"
         "Mereka berjalan melalui lorong sempit dengan wallpaper mengelupas, lukisan-lukisan tua"
         "Sesampai nya di ujung lorong, tampak Rendi yang berhadapan dengan potret keluarga bergaya kolonial"
+
         play music woodsteps fadein 2.0
         show kolonial with fade_black
         stop music
@@ -142,13 +167,32 @@ label chapter_one_start:
         kembali..."
         e "Eliyn: (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
         i "Rafli: Ada ruang rahasia..."
+        "apa yang akan rendi lakukan?"
+
+        menu: 
+            "Masuk ke lorong":
+                jump select_lorong
+            "tetap di ruang tamu":
+                jump select_ruang
+
+        label select_lorong:
+        "kontool"
         return
-        
-        
+
+        label select_ruang:
+        "."
+        return         
+    
     label select_atas:
         $eileenlove -= 1
         i talking "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"
         scene expression Solid("#000000")
+        play sound woodsteps
+        i "scared Mendekati pintu, mendorong pelan"
+        play audio pintu 
+        show kamar anak
+
+        show kamar anak
         return#
 
     label select_diam:

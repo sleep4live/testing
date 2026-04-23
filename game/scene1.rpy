@@ -8,6 +8,13 @@ transform shake:
     linear 0.05 xoffset 0
 define flash = Fade(0.1, 0, 0.5, color="#ffffff")
 
+label flicker_effect:
+    show black
+    with Dissolve(0.1)
+    hide black
+    with Dissolve(0.1)
+    return
+
 scene black_screen
 label chapter_one_start:
     play music crowd loop volume 0.5
@@ -160,6 +167,7 @@ label chapter_one_start:
         "Mereka berjalan melalui lorong sempit dengan wallpaper mengelupas, lukisan-lukisan tua"
         "Sesampai nya di ujung lorong, tampak Rendi yang berhadapan dengan potret keluarga bergaya kolonial"
 
+        ### FOTO ###
         play music woodsteps fadein 2.0
         show kolonial with fade_black
         stop music
@@ -168,7 +176,13 @@ label chapter_one_start:
         window show dissolve
         r "Liat deh... Ini keluarga yang dibantai itu. Tapi... yang aneh... ada satu orang di sini yang wajahnya dicoret."
         l "Mungkin itu pelakunya. Atau korban yang dihapus dari sejarah keluarga."
+        window hide
+        call flicker_effect
+        scene expression Solid("#000000")
+        pause 1.0
         "SFX: Tiba-tiba lampu senter Rendi padam"
+        window show dissolve
+        play music whisper fadein 3.0
         r "Eh, baterainya abis? padahal baru ganti-"
         "Suara bisikan cepat dari belakang lukisan: Kembali... kembali... 
         kembali..."
@@ -189,8 +203,9 @@ label chapter_one_start:
 
         label select_ruang:
         "."
-        return         
-    
+        return
+
+    ###Tangga###
     label select_atas:
         $eileenlove -= 1
         i talking "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"

@@ -1,49 +1,33 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scene1.rpy", line 60, in script
-    l angryy"Rendi, tolong hentikan intro bodohmu itu. Dingin banget di sini, dan baterai ponselku tiba-tiba drop jadi 15%%. Kalau kita cuma mau buktikan mitos konyolmu, mending kita pulang."
-Exception: Image 'lulu' does not accept attributes 'angryy'.
+  File "game/scene1.rpy", line 178, in script
+    scene expression Solid("#000000") with flicker_effect
+  File "game/scene1.rpy", line 178, in <module>
+    scene expression Solid("#000000") with flicker_effect
+                                           ^^^^^^^^^^^^^^
+NameError: name 'flicker_effect' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/scene1.rpy", line 60, in script
-    l angryy"Rendi, tolong hentikan intro bodohmu itu. Dingin banget di sini, dan baterai ponselku tiba-tiba drop jadi 15%%. Kalau kita cuma mau buktikan mitos konyolmu, mending kita pulang."
-  File "renpy/ast.py", line 2925, in execute
-    Say.execute(self)
-    ~~~~~~~~~~~^^^^^^
-  File "renpy/ast.py", line 991, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/exports/sayexports.py", line 129, in say
-    who(what, *args, **kwargs)
-    ~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/character.py", line 1503, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "renpy/character.py", line 1321, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^ 
-  File "renpy/character.py", line 1281, in resolve_say_attributes
-    renpy.exports.show(show_image)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "renpy/exports/displayexports.py", line 486, in show
-    if not base.find_target() and renpy.config.missing_show:
-           ~~~~~~~~~~~~~~~~^^                               
-  File "renpy/display/image.py", line 444, in find_target
-    self.target = target._duplicate(a)
-                  ~~~~~~~~~~~~~~~~~^^^
-  File "renpy/display/displayable.py", line 278, in _duplicate
-    args.extraneous()
-    ~~~~~~~~~~~~~~~^^
-  File "renpy/display/displayable.py", line 118, in extraneous
-    raise Exception(
-    ...<4 lines>...
-    )
-Exception: Image 'lulu' does not accept attributes 'angryy'.
+  File "game/scene1.rpy", line 178, in script
+    scene expression Solid("#000000") with flicker_effect
+  File "renpy/ast.py", line 1577, in execute
+    paired = renpy.python.py_eval(self.paired)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "renpy/python.py", line 1305, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1298, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/scene1.rpy", line 178, in <module>
+    scene expression Solid("#000000") with flicker_effect
+                                           ^^^^^^^^^^^^^^
+NameError: name 'flicker_effect' is not defined
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.5.2.26010301
 testing 1.0
-Wed Apr 22 12:16:45 2026
+Thu Apr 23 19:07:47 2026

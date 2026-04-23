@@ -1,34 +1,33 @@
-2026-04-21 12:36:13 UTC
+2026-04-23 02:44:39 UTC
 Windows-10-10.0.19045-SP0
 Ren'Py 8.5.2.26010301
 
-Early init took 86 ms
-Loading error handling took 66 ms
-Loading script took 1486 ms
-Loading save slot metadata took 47 ms
+Early init took 114 ms
+Loading error handling took 204 ms
+Loading script took 3143 ms
+Loading save slot metadata took 470 ms
 Loading persistent took 0 ms
-Running init code took 138 ms
-Loading analysis data took 5 ms
+Running init code took 386 ms
+Loading analysis data took 15 ms
 Analyze and compile ATL took 3 ms
-Reloading save slot metadata took 25 ms
-Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\testing':
-Dump and make backups took 87 ms
+Reloading save slot metadata took 168 ms
+Dump and make backups took 106 ms
 Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 109 ms
+Making clean stores took 1 ms
+Initial gc took 75 ms
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 4 ms
+Creating interface object took 51 ms
 Init translation took 1 ms
 Cleaning stores took 0 ms
-Load screen analysis took 1 ms
-Analyze screens took 20 ms
-Save screen analysis took 44 ms
+Load screen analysis took 47 ms
+Analyze screens took 2 ms
+Save screen analysis took 0 ms
 Save pyanalysis took 0 ms
-Save bytecode took 49 ms
-Running _start took 2 ms
-Interface start took 497 ms
+Save bytecode took 33 ms
+Running _start took 3 ms
+Interface start took 423 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -42,23 +41,7 @@ Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Cleaning stores took 1 ms
-Load screen analysis took 87 ms
+Cleaning stores took 0 ms
+Load screen analysis took 29 ms
 Analyze screens took 0 ms
 Running _start took 4 ms
-Cleaning stores took 0 ms
-Load screen analysis took 35 ms
-Analyze screens took 0 ms
-Running _start took 2 ms
-Cleaning stores took 0 ms
-Load screen analysis took 32 ms
-Analyze screens took 0 ms
-Running _start took 3 ms
-Cleaning stores took 0 ms
-Load screen analysis took 28 ms
-Analyze screens took 0 ms
-Running _start took 3 ms
-Cleaning stores took 0 ms
-Load screen analysis took 28 ms
-Analyze screens took 0 ms
-Running _start took 2 ms

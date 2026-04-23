@@ -10,29 +10,36 @@ define flash = Fade(0.1, 0, 0.5, color="#ffffff")
 
 scene black_screen
 label chapter_one_start:
-    scene basement
+    play music crowd loop volume 0.5
+    scene kantin with fade_black
+    pause 1.0
     show rafli at Position(xalign=0.0, yalign=0.6, zoom=0.1)
     show rendi at Position(xalign=0.2, yalign=0.6, zoom=0.1)
     show lulu at Position(xalign=0.8, yalign=0.6, zoom=0.1)
     show eileen at Position(xalign=1.0, yalign=0.6, zoom=0.1)
     with dissolve
-
-    play music crowd loop
-
-    l rafli "Ada apa Ren ngajakain ke kantin?"
-    i talking "Tau nih, Tumben banget ngajakin" 
-    r talk3 "Yaaaa gpp sih, gw cuma pengen ketemu kalian"
+    l angry "Ada apa Ren ngajakain ke kantin?"
+    show lulu
+    i talking "Tau nih, Tumben banget ngajakin"
+    show rafli
+    r talk2 "Yaaaa gpp sih, gw cuma pengen ketemu kalian"
     r talk3 "Ehh lu pada tau ga villa 44?"
-    l rafli "OHHHHH villa yang jadi tempat pembunuhan itu ya?"
+    l shock "OHHHHH villa yang jadi tempat pembunuhan itu ya?"
     l rafli "Kenapa emangnya? lu mau ngajakin kita kesana?"
+    show lulu
     r talk3 "Gw punya ide konten mengeksplor villa 44 ini.."
+    show rendi
     e talk2 "Villa yang angker itu kann? ada penunggunya.."
-    i talk1 "emang lu brani Ren?"
+    show eileen
+    i talking "emang lu brani Ren?"
+    show rafli
     r talk "udah ngajakin masa takut?"
     l rafli "tengil banget lo, bukan darerah kita lohh itu..."
+    show lulu angry2
     r talk3 "aman... pake mobil gw aja"
     e talk2 "lu seriusan Ren? Tempat itu kan Terlarang.."
-    l talk "okeee, gw ikut. tapi tunggu gw balik kerja ya..."
+    show eileen
+    l angryy "okeee, gw ikut. tapi tunggu gw balik kerja ya..."
 
  
     play music jangkrek loop

@@ -174,6 +174,7 @@ label chapter_one_start:
         kembali..."
         e "Eliyn: (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
         i "Rafli: Ada ruang rahasia..."
+
         "apa yang akan rendi lakukan?"
 
         menu: 
@@ -183,7 +184,7 @@ label chapter_one_start:
                 jump select_ruang
 
         label select_lorong:
-        "kontool"
+        ""
         return
 
         label select_ruang:
@@ -194,12 +195,22 @@ label chapter_one_start:
         $eileenlove -= 1
         i talking "Lulu, jaga Eliyn. Gue mau cek ke lantai atas bentar"
         scene expression Solid("#000000")
-        play sound woodsteps
-        i "scared Mendekati pintu, mendorong pelan"
-        play audio pintu 
-        show kamar anak
-
-        show kamar anak
+        pause 0.5
+        "Rafli naik sendiri, meninggalkan Lulu dan Eliyn di bawah."
+        play music woodsteps
+        pause 0.5
+        i "Setiap anak tangga berbunyi seperti mau patah. Kenapa 
+        aku merasa... ada yang ikut naik di belakangku?"
+        "Mendekati pintu, mendorong pelan"
+        stop music 
+        play audio pintu
+        scene kamar anak with fade_black
+        window hide
+        pause
+        window show dissolve
+        i scared "Suasana disini begitu mencekam..." 
+        play music music
+        ""
         return#
 
     label select_diam:

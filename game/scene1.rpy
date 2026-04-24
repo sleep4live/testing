@@ -178,16 +178,16 @@ label chapter_one_start:
         l "Mungkin itu pelakunya. Atau korban yang dihapus dari sejarah keluarga."
         window hide
         call flicker_effect
+        play audio senter
         scene expression Solid("#000000")
         pause 1.0
-        "SFX: Tiba-tiba lampu senter Rendi padam"
         window show dissolve
         play music whisper fadein 3.0
         r "Eh, baterainya abis? padahal baru ganti-"
         "Suara bisikan cepat dari belakang lukisan: Kembali... kembali... 
         kembali..."
-        e "Eliyn: (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
-        i "Rafli: Ada ruang rahasia..."
+        e " (teriak dia wak) DIA BILANG KITA HARUS KEMBALI!"
+        i " Ada ruang rahasia..."
 
         "apa yang akan rendi lakukan?"
 
@@ -198,7 +198,25 @@ label chapter_one_start:
                 jump select_ruang
 
         label select_lorong:
-        ""
+        "Setelah eksplorasi, Rafli dan kawan kawan akhirnya berkumpul di ruang bawah tanah yang 
+        ditemukan dari berbagai petunjuk."
+        show basement with fade_black
+        show eileen pucat at Position(xalign=1.0, yalign=0.6, zoom=0.1)
+        e "Asatga tempat apa ini?!"
+        show lulu rafli at Position(xalign=0.8, yalign=0.6, zoom=0.1)
+        l "Ini... ini bukan pembantaian biasa. Ini ritual."
+        l "Kepala keluarga mencoba 'memindahkan' jiwanya ke tubuh anaknya agar hidup abadi."
+        show rafli mad2 at Position(xalign=0.0, yalign=0.6, zoom=0.1)
+        i "Tapi gagal?"
+        show rendi at Position(xalign=0.2, yalign=0.6, zoom=0.1)
+        "Rekaman VHS buram - terlihat ayah dengan mata kosong mengejar 
+        anak-anaknya, suara teriakan, lalu static"
+        show eileen shock at Position(xalign=1.0, yalign=0.6, zoom=0.1)
+        e "ITU DIA! YANG DI LUKISAN! DIA ADA DI SINI!"
+        play sound teriakan 
+        "SPRITE: Sosok dengan wajah dicoret hitam, berdiri membelakangi mereka"
+        "Sosok:  KALIAN... AKAN JADI... KELUARGA BARU... KU..."
+
         return
 
         label select_ruang:

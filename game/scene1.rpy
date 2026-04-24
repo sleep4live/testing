@@ -208,7 +208,11 @@ label chapter_one_start:
         l "Kepala keluarga mencoba 'memindahkan' jiwanya ke tubuh anaknya agar hidup abadi."
         show rafli mad2 at Position(xalign=0.0, yalign=0.6, zoom=0.1)
         i "Tapi gagal?"
-        show rendi at Position(xalign=0.2, yalign=0.6, zoom=0.1)
+        "Rendi: (Menemukan kamera video lama) Ada rekaman... Guys, ini rekaman malam 
+        kejadiannya!"
+        play sound tembak
+        "suara jeritan boleh ditambahin sihh"
+        show black
         "Rekaman VHS buram - terlihat ayah dengan mata kosong mengejar 
         anak-anaknya, suara teriakan, lalu static"
         show eileen shock at Position(xalign=1.0, yalign=0.6, zoom=0.1)

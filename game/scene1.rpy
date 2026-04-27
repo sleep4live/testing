@@ -8,6 +8,41 @@ transform shake:
     linear 0.05 xoffset 0
 define flash = Fade(0.1, 0, 0.5, color="#ffffff")
 
+screen drag_drop:
+    add "images/basement.jpg"
+    drag :
+            align (0.3, 0.5) 
+            add "images/tape.png" xysize(450,450)
+            drag_raise True
+    drag :
+            align (0.4, 0.2) 
+            add "images/book.png" xysize(250,450)
+            drag_raise True
+    drag :
+            align (0.4, 0.2) 
+            add "images/korek.png" xysize(450,450)
+            drag_raise True
+    drag :
+            align (0.4, 0.2) 
+            add "images/pisau.png" xysize(450,450)
+            drag_raise True
+    drag :
+            align (0.4, 0.2) 
+            add "images/korek.png" xysize(450,450)
+            drag_raise True
+    drag :
+            align (0.4, 0.2) 
+            add "images/kamera.png" xysize(450,450)
+            drag_raise True
+    drag :
+            align (0.4, 0.2) 
+            add "images/aa.png" xysize(450,450)
+            drag_raise True
+
+
+
+
+            
 label flicker_effect:
     show black
     with Dissolve(0.1)
@@ -220,6 +255,7 @@ label chapter_one_start:
         play sound teriakan 
         "SPRITE: Sosok dengan wajah dicoret hitam, berdiri membelakangi mereka"
         "Sosok:  KALIAN... AKAN JADI... KELUARGA BARU... KU..."
+        call screen drag_drop
         show tape  at Position(xalign=1.0, yalign=0.6, zoom=0.1)
         ".."
         return

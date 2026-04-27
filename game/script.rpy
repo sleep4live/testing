@@ -9,6 +9,10 @@
         elif event in ("slow_done", "end"):
             renpy.sound.stop(channel="sound")
 
+    def drag_placed(drags, drop):
+        if not drop:
+            return
+        
 define e = Character("Eileen", image="eileen", who_color="#252274", callback=typing_callback)
 define i = Character("Rafli", image="rafli", who_color="#fba92b", callback=typing_callback)
 define l = Character("Lulu", image="lulu", who_color="#2aa7b6",  callback=typing_callback)
@@ -37,6 +41,8 @@ label splashscreen:
     return
 
 label start:
+
+    scene black
     show rendi  at Position(xalign=0.4, yalign=0.5)
     show lulu diam at Position(xalign=0.7, yalign=0.5)
     show rafli talking at Position(xalign=0.1, yalign=0.5)

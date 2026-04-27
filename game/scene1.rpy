@@ -220,7 +220,8 @@ label chapter_one_start:
         play sound teriakan 
         "SPRITE: Sosok dengan wajah dicoret hitam, berdiri membelakangi mereka"
         "Sosok:  KALIAN... AKAN JADI... KELUARGA BARU... KU..."
-
+        show tape  at Position(xalign=1.0, yalign=0.6, zoom=0.1)
+        ".."
         return
 
         label select_ruang:

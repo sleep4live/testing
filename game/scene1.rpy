@@ -234,7 +234,7 @@ label chapter_one_start:
 
         label select_lorong:
         "Setelah eksplorasi, Rafli dan kawan kawan akhirnya berkumpul di ruang bawah tanah yang 
-        ditemukan dari berbagai petunjuk."
+        ditemukan dari berbagai petunjukka."
         show basement with fade_black
         show eileen pucat at Position(xalign=1.0, yalign=0.6, zoom=0.1)
         e "Asatga tempat apa ini?!"

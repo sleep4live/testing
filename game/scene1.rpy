@@ -8,35 +8,76 @@ transform shake:
     linear 0.05 xoffset 0
 define flash = Fade(0.1, 0, 0.5, color="#ffffff")
 
+init python:
+    def item_dropped(drags, drop):
+        # 1. Kalau 'drop' itu None, berarti dilepas di tempat kosong
+        if not drop:
+            return # Balik ke screen tanpa lanjutin scene
+
+        # 2. Ambil nama benda yang diseret dan benda tempat drop
+        item_nyeret = drags[0].drag_name
+        item_tujuan = drop.drag_name
+
+        # 3. Logika khusus: Tape di atas Book atau sebaliknya
+        if ((item_nyeret == "tape" and item_tujuan == "book")
+                or (item_nyeret == "book" and item_tujuan == "tape")):
+            return True # CUMA ini yang bakal bikin scene lanjut
+
+        # 4. Kalau drop di atas benda lain tapi salah, jangan lanjut
+        return None
+
+
 screen drag_drop:
+    modal True
     add "images/basement.jpg"
-    drag :
-            align (0.3, 0.5) 
+    draggroup:
+        drag :  
+            drag_name "tape"
+            align (0.6, 0.5)
+            dragged item_dropped 
             add "images/tape.png" xysize(450,450)
             drag_raise True
-    drag :
+        drag :
+            drag_name "book"
             align (0.4, 0.2) 
+            dragged item_dropped 
             add "images/book.png" xysize(250,450)
             drag_raise True
-    drag :
-            align (0.4, 0.2) 
+        drag :
+            drag_name "korek"
+            align (0.8, 0.3)
+            dragged item_dropped 
             add "images/korek.png" xysize(450,450)
             drag_raise True
-    drag :
-            align (0.4, 0.2) 
+        drag :
+            drag_name "pisau"
+            align (0.9, 0.8) 
+            dragged item_dropped 
             add "images/pisau.png" xysize(450,450)
             drag_raise True
-    drag :
-            align (0.4, 0.2) 
+        drag :
+            drag_name "korek"
+            align (0.2, 0.1) 
+            dragged item_dropped 
             add "images/korek.png" xysize(450,450)
             drag_raise True
-    drag :
-            align (0.4, 0.2) 
+        drag :
+            drag_name "kamera"
+            align (0.6, 0.7) 
+            dragged item_dropped 
             add "images/kamera.png" xysize(450,450)
             drag_raise True
-    drag :
-            align (0.4, 0.2) 
+        drag :
+            drag_name "aa"
+            align (0.8, 0.3) 
+            dragged item_dropped 
             add "images/aa.png" xysize(450,450)
+            drag_raise True
+        drag :
+            drag_name "banana"
+            align (0.8, 0.9)
+            dragged item_dropped
+            add "images/banan.png"
             drag_raise True
 
 
@@ -255,10 +296,22 @@ label chapter_one_start:
         play sound teriakan 
         "SPRITE: Sosok dengan wajah dicoret hitam, berdiri membelakangi mereka"
         "Sosok:  KALIAN... AKAN JADI... KELUARGA BARU... KU..."
+        "Gabungkan 2 item untuk mengalahkan monster"
+        window hide
         call screen drag_drop
-        show tape  at Position(xalign=1.0, yalign=0.6, zoom=0.1)
-        ".."
-        return
+        jump after_drag_drop
+
+        label after_drag_drop:
+        play audio korekapi
+        "Rafli mengambil korek api dari saku Rendi dan menyulut buku harian. Api 
+        menjalar ke foto-foto keluarga yang berserakan."
+        play audio teriakbanyak
+        "TIDAAAAAAAAAAAAAAAAAAK" with vpunch
+        play audio slam
+        "Pintu basement terbuka sendiri. Cahaya bulan masuk."
+        r angry "LARI SEKARANG!!!!"
+        play audio runaway
+        jump endingA
 
         label select_ruang:
         "."
